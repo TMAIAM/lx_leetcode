@@ -10,7 +10,7 @@ public:
             ++mp[s[i]];
             --mp[t[i]];
         }
-        
+
         // for(unordered_map<char,int>::iterator it= mp.begin(); it!=mp.end(); it++){
         //     if(it->second!=0){
         //         return false;
@@ -33,13 +33,13 @@ public:
 如果out1 和 out2完全相同，则str1和str2护卫字符异位词。
 
 思路：哈希表、字符串遍历
+时间复杂度：O(n)
 
 
+其他解法：
+先排序，直接比较字符串
 优化：
 如果s和t的字符长度都不一样，则不需要后续的判断了
-
-*/
-
 
 /*
 bool isAnagram(string s, string t) {        
@@ -65,6 +65,5 @@ bool isAnagram(string s, string t) {
 */
 
 /*
-
 其他思路：使用sort函数
 */
